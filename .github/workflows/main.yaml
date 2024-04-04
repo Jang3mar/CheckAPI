@@ -25,7 +25,7 @@ jobs:
       run: dotnet watch run
 
     - name: Install stylecop
-      run: dotnet add package StyleCop.Analyzers --version <1.0.2>
+      run: dotnet add package StyleCop.Analyzers
 
     - name: Start Application
       run: dotnet stylecop
