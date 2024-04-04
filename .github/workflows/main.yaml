@@ -23,3 +23,9 @@ jobs:
 
     - name: Run Application
       run: dotnet watch run
+
+    - name: Install stylecop
+      run: dotnet tool install StyleCop.MSBuild --tool-path . --version <6.2.0>
+
+    - name: Start Application
+      run: dotnet stylecop
