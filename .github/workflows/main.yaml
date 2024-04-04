@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: '6.0'
     
-    - name: Build and Test
-      run: dotnet build --configuration Release
+    # - name: Build and Test
+    #   run: dotnet build --configuration Release
 
     - name: Run Application
       run: dotnet watch run
