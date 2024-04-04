@@ -16,16 +16,16 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '6.0'
+        dotnet-version: '7.0.x'
     
     # - name: Build and Test
     #   run: dotnet build --configuration Release
 
-    - name: Run Application
-      run: dotnet watch run
+    # - name: Run Application
+    #   run: dotnet watch run
 
     - name: Install stylecop
       run: dotnet add package StyleCop.Analyzers --version 1.2.0
 
     - name: Start Application
-      run: dotnet stylecop
+      run: dotnet build p:/StyleCopEnabled=true
